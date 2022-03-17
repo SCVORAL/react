@@ -1,0 +1,29 @@
+.post-modal {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.post-modal.active {
+  display: flex;
+  position: fixed;
+}
+
+.post-modal-body {
+  display: flex;
+  width: 50%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.post-modal-body img {
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
