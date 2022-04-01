@@ -23,8 +23,8 @@ function App() {
   useEffect(() => {
     const getPosts = async () => {
       setLoading(true);
-      const res = await axios.get('http://jsonplaceholder.typicode.com/posts');
-      const resImg = await axios.get('http://jsonplaceholder.typicode.com/photos');
+      const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
+      const resImg = await axios.get('https://jsonplaceholder.typicode.com/photos');
 
       res.data.forEach((post, index) => {
         post.image = resImg.data[index].thumbnailUrl
